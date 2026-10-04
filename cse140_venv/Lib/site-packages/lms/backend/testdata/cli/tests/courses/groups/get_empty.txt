@@ -1,0 +1,10 @@
+{
+    "cli": "lms.cli.courses.groups.get",
+    "arguments": [
+        "--course", "Extra Course",
+        "--groupset", "Group Set 1",
+        "--format", "json",
+    ],
+}
+---
+[]

@@ -1,0 +1,10 @@
+{
+    "cli": "edq.cli.profile.cprofile",
+    "stdout_assertion_func": "edq.testing.asserts.has_content_100",
+    "arguments": [
+        "--import", "edq.util.json",
+        "--pattern", "edq",
+        "edq.util.json.dumps({'a': 1})",
+    ],
+}
+---

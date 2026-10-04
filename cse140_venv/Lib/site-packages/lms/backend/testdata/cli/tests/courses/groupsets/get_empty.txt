@@ -1,0 +1,9 @@
+{
+    "cli": "lms.cli.courses.groupsets.get",
+    "arguments": [
+        "--course", "130000000",
+        "--format", "json",
+    ],
+}
+---
+[]

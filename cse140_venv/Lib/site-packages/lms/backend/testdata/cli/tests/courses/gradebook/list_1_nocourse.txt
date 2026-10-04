@@ -1,0 +1,10 @@
+{
+    "cli": "lms.cli.courses.gradebook.list",
+    "arguments": [
+        "--course", "999",
+        "--format", "json"
+    ],
+    error: true
+}
+---
+builtins.ValueError: Could not resolve course query: '999'.

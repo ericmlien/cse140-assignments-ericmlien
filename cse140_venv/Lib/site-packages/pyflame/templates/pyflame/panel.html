@@ -1,0 +1,25 @@
+<!--
+Copyright 2020-2022 Daniel Harding
+Distributed as part of the pyflame project under the terms of the MIT license
+-->
+
+{% if srcdoc is not None %}
+<style>
+    #FlamegraphPanel .djDebugPanelContent {
+        padding: 0;
+    }
+    #FlamegraphPanel .djDebugPanelContent .djdt-scroll {
+        padding: 0;
+        overflow: visible;
+    }
+</style>
+<iframe srcdoc="{{ srcdoc|safe }}" style="height: 100%; width: 100%;">
+{% else %}
+<p>Could not locate the <a href="https://github.com/brendangregg/FlameGraph/blob/master/flamegraph.pl">flamegraph.pl</a> script. Either copy flamegraph.pl to a location on your <code style="display: inline;">PATH</code>, or configure the path to the script by adding a snippet like the following to your Django config:</p>
+
+<code>
+    PYFLAME_CONFIG = {
+        'FLAMEGRAPH_SCRIPT_PATH': '<i>&lt;path to flamegraph.pl&gt;</i>'
+    }
+</code>
+{% endif %}

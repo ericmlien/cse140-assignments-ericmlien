@@ -1,0 +1,14 @@
+{
+    "cli": "lms.cli.courses.list",
+    "arguments": [
+    ],
+}
+---
+id: 110000000
+name: Course 101
+
+id: 120000000
+name: Course Using Different Languages
+
+id: 130000000
+name: Extra Course

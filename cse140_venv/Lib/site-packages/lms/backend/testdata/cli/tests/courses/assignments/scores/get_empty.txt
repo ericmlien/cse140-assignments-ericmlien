@@ -1,0 +1,10 @@
+{
+    "cli": "lms.cli.courses.assignments.scores.get",
+    "arguments": [
+        "--course", "110000000",
+        "--assignment", "Homework 0",
+        "--format", "json",
+    ],
+}
+---
+[]

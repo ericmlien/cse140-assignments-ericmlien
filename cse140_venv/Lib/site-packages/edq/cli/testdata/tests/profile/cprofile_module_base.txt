@@ -1,0 +1,11 @@
+{
+    "cli": "edq.cli.profile.cprofile",
+    "stdout_assertion_func": "edq.testing.asserts.has_content_100",
+    "arguments": [
+        "--module",
+        "--pattern", "edq",
+        "edq.cli.config.list",
+        "--", "--include-cli", "--show-origin",
+    ],
+}
+---

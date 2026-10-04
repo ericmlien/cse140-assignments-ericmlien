@@ -1,0 +1,21 @@
+{
+    "cli": "edq.cli.config.list",
+    "setup_funcs": [
+        "edq.testing.cli.create_directory_structure",
+    ],
+    "arguments": [
+        "--config-global", "global.json",
+        "--show-origin",
+    ],
+    "work_dir": "__TEMP_DIR__()",
+    "extra_options": {
+        "directory_structure": [
+            ["global.json", {
+                "log_level": "DEBUG",
+            }],
+        ],
+    },
+}
+---
+Key	Value	Origin
+log_level	DEBUG	<global config file (__TEMP_DIR__(global.json))>
